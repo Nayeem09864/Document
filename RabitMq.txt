@@ -1,0 +1,9 @@
+Architectural differences: Kafka vs. RabbitMQ
+
+RabbitMQ and Apache Kafka allow producers to send messages to consumers. Producers are applications that publish information, while consumers are applications that subscribe to and process information.
+
+Producers and consumers interact differently in RabbitMQ and Kafka. In RabbitMQ, the producer sends and monitors if the message reaches the intended consumer. On the other hand, Kafka producers publish messages to the 
+queue regardless of whether consumers have retrieved them.
+
+You can think of RabbitMQ as a post office that receives mail and delivers it to the intended recipients. Meanwhile, Kafka is similar to a library, which organizes messages on shelves with different genres that producers publish. 
+Then, consumers read the messages from the respective shelves and remember what they have read. 
